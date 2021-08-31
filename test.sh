@@ -1,2 +1,2 @@
 echo starting to run wget...
-python ./test2.py
+python /tmp/testcase/test2.py
