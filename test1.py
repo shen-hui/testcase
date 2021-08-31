@@ -21,4 +21,4 @@ def timming_exe(cmd,inc=60):
   tar.close()
   schedule.run()
 print('show time after 20 seconds:')
-timming_exe('echo %time%',20)
+timming_exe('echo %time%',120)
