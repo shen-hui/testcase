@@ -7,8 +7,6 @@ schedule = sched.scheduler(time.time,time.sleep)
 def perform_command(cmd,inc):
   os.system(cmd)
   print('task')
-def timming_exe(cmd,inc=60):
-  schedule.enter(inc,0,perform_command,(cmd,inc))
   # 网络地址
   DATA_URL = 'http://www.robots.ox.ac.uk/~ankush/data.tar.gz'
   # 本地硬盘文件
@@ -20,5 +18,7 @@ def timming_exe(cmd,inc=60):
   tar.extractall()
   tar.close()
   schedule.run()
-print('show time after 20 seconds:')
-timming_exe('echo %time%',120)
+def timming_exe(cmd,inc=60):
+  schedule.enter(inc,0,perform_command,(cmd,inc))
+print('show time after 60 seconds:')
+timming_exe('echo %time%',60)
