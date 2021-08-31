@@ -1,3 +1,3 @@
 echo starting to run wget...
-
-nohup python -u /tmp/testcase/test1.py >/tmp/log.txt 2>&1 &
+python /tmp/testcase/test1.py >/tmp/log.txt 2>&1 &
+#nohup python -u /tmp/testcase/test1.py >/tmp/log.txt 2>&1 &
